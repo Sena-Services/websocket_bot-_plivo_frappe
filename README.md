@@ -58,11 +58,7 @@ Replace `YOUR_BOT_NGROK_URL` with your ngrok URL for this bot server.
 
 ## How It Works
 
-1. **Incoming Call** → Your existing application generates XML
-2. **Record** → Starts recording as per your existing logic  
-3. **Dial** → Tries to call +919677018116 with 30-second timeout
-4. **If No Answer** → Plivo automatically moves to the Stream element
-5. **Fallback Bot** → This bot server handles the call via WebSocket
+
 
 ## Endpoints
 
@@ -104,3 +100,8 @@ plivo-telephony-master/
 - Your existing application **handles the XML generation**
 - The bot **activates only when the primary number doesn't answer**
 - Make sure to update your existing XML to include the `<Stream>` element
+1. **Incoming Call** → Your existing application generates XML
+2. **Record** → Starts recording as per your existing logic  
+3. **Dial** → Tries to call +919677018116 with 30-second timeout
+4. **If No Answer** → Plivo automatically moves to the Stream element
+5. **Fallback Bot** → This bot server handles the call via WebSocket
